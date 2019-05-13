@@ -1,0 +1,14 @@
+@import 'mixins/colours';
+@import 'mixins/typography';
+
+/* Screen Sizes */
+
+$mobile-width: 768px - 1px;
+
+
+
+@mixin tablet {
+  @media (max-width: #{ $mobile-width }) {
+    @content;
+  }
+}

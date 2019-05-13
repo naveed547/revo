@@ -1,0 +1,15 @@
+@import 'utils/mixins';
+@import 'utils/fonts';
+
+body,html {
+    padding: 0;
+    color: $black;
+    font-size: 10px;
+    @include font-normal;
+}
+
+@import 'components/header';
+@import 'components/table';
+@import 'components/footer';
+@import 'components/mobile';
+

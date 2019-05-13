@@ -1,0 +1,116 @@
+.revo-basket {
+    background: $light-white;
+    padding: 70px 30px 170px;
+    &__header { 
+        font-size: 3rem;
+        @include font-bold;
+    }
+    
+    &__description {
+        color: $black;
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+    
+    &__order {
+        color: $black;
+        font-size: 1.8rem;
+        margin-top: 65px;
+        &-body {
+            margin-bottom: 40px;
+            > .row:nth-child(2n) {
+                background: $dark-white;
+            }
+            .fa-trash {
+                color: $btn-primary;
+                position: absolute;
+                right: -30px;
+                &:hover, &:focus, &:active {
+                    color: $btn-hover;
+                }
+            }
+        }
+        &-header > .row {
+            border-bottom: 2px solid $light-gray;
+        }
+        &-body > .row {
+            padding: 18px 0;
+        }
+        &-body, &-header {
+            > .row {
+                > div::nth-child(2), div:last-of-type {
+                    text-align: right;
+                }
+                > div:not(:first-child) {
+                    text-align: center;  
+                }
+            }
+            
+        }
+    }
+
+    &__order-header, &__total {
+        @include font-bold;
+    }
+    
+    &__button {
+        button {
+            font-size: 2.4rem;
+            @include font-sans-bold;
+            border-radius: 15px;
+            background: $btn-primary;
+            box-shadow: 0px 4px 5px $gray;
+            color: $white;
+            padding: 15px 26px;
+            border: none;
+            &:focus, &:hover, &:active {
+                background: $btn-hover;
+            }
+        }
+    }
+    
+    &__subtotal, &__vat {
+        color: $dark-grey;
+    }
+    
+    &__total {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    &__subtotal, &__vat, &__total {
+        > span:last-child {
+            text-align: right;
+        }
+    }
+}
+
+.my-qty {
+    &__wrap {
+        display: flex;
+    }
+    &__control {
+        flex-basis: 20px;
+        padding-left: 2px;
+        > div {
+            color: $white;
+            background: $light-gray;
+            font-size: 7px;
+            text-align: center;
+            vertical-align: middle;
+            padding: 3px 0;
+        }
+        &-dec {
+            margin-top: 1px;
+        }
+    }
+    &__inp {
+        flex-grow: 1;
+        border: 1px solid $light-gray;
+        height: 33px;
+        text-align: right;
+        border-radius:0;
+        padding: 0 4px;
+        font-size: 1.8rem;
+    }
+}

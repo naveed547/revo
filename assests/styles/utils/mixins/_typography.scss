@@ -1,0 +1,11 @@
+@mixin font-normal() {
+    font-family: 'droid_serifregular';
+}
+
+@mixin font-sans-bold() {
+	font-family: 'droid_sansbold';
+}
+
+@mixin font-bold() {
+	font-family: 'droid_serifbold';
+}

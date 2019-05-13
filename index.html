@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Revonic Product Basket</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <header class="revo-header">
+        <div class="container">
+            <img src="images/logo.png" alt="Revonic logo"/>
+        </div>
+    </header>
+    <section class="revo-basket" id="content" tabindex="-1">
+        <div class="container">
+            <div class="row justify-content-sm-center">
+                <div class="col-sm-12 col-md-10 col-lg-7 col-xl-6">
+                    <p class="revo-basket__header revo-basket__empty">Currently there are no items in your basket</p>
+                    <div class="revo-basket-container d-none">
+                        <h1 class="revo-basket__header">Your Basket</h1>
+                        <p class="revo-basket__description">Items you have added to your basket are shown below.</p>
+                        <p class="revo-basket__description">Adjust the quantities or remove items before continuing your purchase.</p>
+                        <div class="revo-basket__order">
+                            <div class="revo-basket__table" role="table" aria-label="My Orders in basket">
+                                <div class="revo-basket__order-header d-none d-md-block">
+                                    <div class="row" role="row">
+                                        <div class="col-md-6" role="columnheader">
+                                            Product
+                                        </div>
+                                        <div class="col-md-2" role="columnheader">
+                                            Price
+                                        </div>
+                                        <div class="col-md-2" role="columnheader">
+                                            Qty
+                                        </div>
+                                        <div class="col-md-2" role="columnheader">
+                                            Cost
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="revo-basket__order-body"></div>
+                            </div>
+                            <div class="revo-basket__subtotal row">
+                                <span class="revo-basket__subtotal__header col-8">Subtotal</span>
+                                <span class="revo-basket__subtotal__price col-4"></span>
+                            </div>
+                            <div class="revo-basket__vat row">
+                                <span class="revo-basket__vat__header col-8">VAT @20%</span>
+                                <span class="revo-basket__vat__price col-4"></span>
+                            </div>
+                            <div class="revo-basket__total row">
+                                <span class="revo-basket__total__header col-8">Total Cost</span>
+                                <span class="revo-basket__total__price col-4"></span>
+                            </div>
+                            <div class="revo-basket__button d-flex justify-content-end">
+                                <button class="btn btn-primary">Buy Now <i class="fa fa-angle-double-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="revo-footer">
+        <div class="container">
+            <div class="row justify-content-sm-center">
+                <p class="revo-footer__disclaimer col-sm-6">&copy; 2019 REVONIC Ltd. Registered in DUBAI</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

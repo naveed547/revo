@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "es5",
+        "removeComments": true,
+        "allowSyntheticDefaultImports": false,
+        "outDir": "./build/",
+        "lib": ["es2015", "es2017", "dom"],
+        "baseUrl": ".",
+    },
+    "include": [
+        "./assests/js/**/**/*"
+    ],
+    "exclude": [
+        "node_modules", "build"
+    ]
+}
